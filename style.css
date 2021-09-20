@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+main {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    flex-direction: row;
+    height: auto;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.5rem;
+  }
+  h1,
+  p {
+    margin: 0;
+  }
+  main {
+    column-count: 2;
+  }
+}
